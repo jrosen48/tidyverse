@@ -12,13 +12,14 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="../tidyverse.css" rel="stylesheet">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="../tidyverse.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><link href="../tidyverse-2.css" rel="stylesheet">
 <meta property="og:title" content="Welcome to the Tidyverse">
-<meta property="og:description" content="">
+<meta property="og:description" content="tidyverse">
 <meta property="og:image" content="https://tidyverse.tidyverse.org/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -32,7 +33,7 @@
   gtag('config', 'UA-115082821-1');
 </script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -46,7 +47,7 @@
 
       <div class="navbar-brand-container">
         <a class="navbar-brand" href="../index.html">tidyverse</a>
-        <div class="info">
+        <div class="info hidden-xs hidden-sm">
           <span class="partof">part of the <a href="https://tidyverse.org">tidyverse</a></span>
           <span class="version version-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.3.0.9000</span>
         </div>
@@ -96,7 +97,7 @@
   </ul>
 </li>
         <li>
-  <a href="https://github.com/tidyverse/tidyverse">
+  <a href="https://github.com/tidyverse/tidyverse/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -114,7 +115,7 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1>Welcome to the Tidyverse</h1>
+      <h1 data-toc-skip>Welcome to the Tidyverse</h1>
                         <h4 class="author">Hadley Wickham, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, Alex Hayes, Lionel Henry, Jim Hester, Max Kuhn, Thomas Lin Pedersen, Evan Miller, Stephan Milton Bache, Kirill Müller, Jeroen Ooms, David Robinson, Dana Paige Seidel, Vitalie Spinu, Kohske Takahashi, Davis Vaughan, Claus Wilke, Kara Woo, Hiroaki Yutani</h4>
             
             <h4 class="date">19 November 2019</h4>
@@ -139,19 +140,19 @@
 <h1 class="hasAnchor">
 <a href="#tidyverse-package" class="anchor"></a>Tidyverse package</h1>
 <p>The tidyverse is a collection of packages that can easily be installed with a single “meta”-package, which is called “tidyverse”. This provides a convenient way of downloading and installing all tidyverse packages with a single R command:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"tidyverse"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"tidyverse"</span>)</pre></body></html></div>
 <p>The core tidyverse includes the packages that you’re likely to use in everyday data analyses, and these are attached when you attach the tidyverse package:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(tidyverse)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="co">#&gt; -- Attaching packages ---------------------- tidyverse 1.3.0.9000 --</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co">#&gt; v ggplot2 3.2.1     v purrr   0.3.3</span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co">#&gt; v tibble  2.1.3     v dplyr   0.8.3</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co">#&gt; v tidyr   1.0.0     v stringr 1.4.0</span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co">#&gt; v readr   1.3.1     v forcats 0.4.0</span></a>
-<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="co">#&gt; -- Conflicts ------------------------------ tidyverse_conflicts() --</span></a>
-<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="co">#&gt; x dplyr::filter() masks stats::filter()</span></a>
-<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="co">#&gt; x dplyr::lag()    masks stats::lag()</span></a></code></pre></div>
+<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">tidyverse</span>)
+<span class="co">#&gt; -- Attaching packages ---------------------- tidyverse 1.3.0.9000 --</span>
+<span class="co">#&gt; v ggplot2 3.3.1     v purrr   0.3.4</span>
+<span class="co">#&gt; v tibble  3.0.1     v dplyr   1.0.0</span>
+<span class="co">#&gt; v tidyr   1.1.0     v stringr 1.4.0</span>
+<span class="co">#&gt; v readr   1.3.1     v forcats 0.5.0</span>
+<span class="co">#&gt; -- Conflicts ------------------------------ tidyverse_conflicts() --</span>
+<span class="co">#&gt; x dplyr::filter() masks stats::filter()</span>
+<span class="co">#&gt; x dplyr::lag()    masks stats::lag()</span></pre></body></html></div>
 <p>This is a convenient shortcut for attaching the core packages, produces a short report telling you which package versions you’re using, and succinctly informs you of any conflicts with previously loaded packages. As of tidyverse version 1.2.0, the core packages include dplyr <span class="citation">(Wickham et al. 2019)</span>, forcats <span class="citation">(Wickham 2019b)</span>, ggplot2 <span class="citation">(Wickham 2016)</span>, purrr <span class="citation">(Henry and Wickham 2019)</span>, readr <span class="citation">(Wickham and Hester 2018)</span>, stringr <span class="citation">(Wickham 2019d)</span>, tibble <span class="citation">(Müller and Wickham 2018)</span>, and tidyr <span class="citation">(Wickham and Henry 2019)</span>.</p>
-<p>Non-core packages are installed with <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("tidyverse")</a></code>, but are not attached by <code><a href="https://rdrr.io/r/base/library.html">library(tidyverse)</a></code>. They play more specialised roles, so will be attached by the analyst as needed. The non-core packages are: blob <span class="citation">(Wickham 2018a)</span>, feather <span class="citation">(Wickham 2019a)</span>, jsonlite <span class="citation">(Ooms 2014)</span>, glue <span class="citation">(Hester 2018)</span>, googledrive <span class="citation">(D’Agostino McGowan and Bryan 2019)</span>, haven <span class="citation">(Wickham and Miller 2018)</span>, hms <span class="citation">(Müller 2018)</span>, lubridate <span class="citation">(Spinu, Grolemund, and Wickham 2018)</span>, magrittr <span class="citation">(Bache and Wickham 2014)</span>, modelr <span class="citation">(Wickham 2018b)</span>, readxl <span class="citation">(Wickham and Bryan 2019)</span>, reprex <span class="citation">(Bryan et al. 2019)</span>, rvest <span class="citation">(Wickham 2019c)</span>, and xml2 <span class="citation">(Wickham, Hester, and Ooms 2019)</span>.</p>
+<p>Non-core packages are installed with <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("tidyverse")</a></code>, but are not attached by <code><a href="https://tidyverse.tidyverse.org/reference">library(tidyverse)</a></code>. They play more specialised roles, so will be attached by the analyst as needed. The non-core packages are: blob <span class="citation">(Wickham 2018a)</span>, feather <span class="citation">(Wickham 2019a)</span>, jsonlite <span class="citation">(Ooms 2014)</span>, glue <span class="citation">(Hester 2018)</span>, googledrive <span class="citation">(D’Agostino McGowan and Bryan 2019)</span>, haven <span class="citation">(Wickham and Miller 2018)</span>, hms <span class="citation">(Müller 2018)</span>, lubridate <span class="citation">(Spinu, Grolemund, and Wickham 2018)</span>, magrittr <span class="citation">(Bache and Wickham 2014)</span>, modelr <span class="citation">(Wickham 2018b)</span>, readxl <span class="citation">(Wickham and Bryan 2019)</span>, reprex <span class="citation">(Bryan et al. 2019)</span>, rvest <span class="citation">(Wickham 2019c)</span>, and xml2 <span class="citation">(Wickham, Hester, and Ooms 2019)</span>.</p>
 <p>The tidyverse package is designed with an eye for teaching: <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("tidyverse")</a></code> gets you a “batteries-included” set of 87 packages (at time of writing). This large set of dependencies means that it is not appropriate to use the tidyverse package within another package; instead, we recommend that package authors import only the specific packages that they use.</p>
 </div>
 <div id="components" class="section level1">
@@ -303,21 +304,11 @@
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <div id="tocnav">
-      <h2 class="hasAnchor">
-<a href="#tocnav" class="anchor"></a>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-<li><a href="#summary">Summary</a></li>
-      <li><a href="#tidyverse-package">Tidyverse package</a></li>
-      <li><a href="#components">Components</a></li>
-      <li><a href="#design-principles">Design principles</a></li>
-      <li><a href="#acknowledgments">Acknowledgments</a></li>
-      <li><a href="#references">References</a></li>
-      </ul>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
 </div>
-      </div>
 
 </div>
 
